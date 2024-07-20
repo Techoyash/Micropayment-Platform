@@ -14,3 +14,13 @@ $ git clone https://github.com/YashSinghal1512/ProxyServerMulti-Threaded.git
 $ cd MultiThreadedProxyServerClient
 $ make all
 $ ./proxy <port no.>
+
+##### Limitations ​
+If a URL triggers multiple clients, the cache will store each client's response as a separate element in the linked list. Consequently, when retrieving from the cache, only a portion of the response might be sent, preventing the website from fully opening. Additionally, the cache elements have a fixed size that means large websites may not be stored in the cache.
+
+##### How this project can be extended? ​
+The code can be enhanced by implementing multiprocessing, which would speed up the process through parallelism. We can also extend the code to decide which types of websites should be allowed.
+
+# Note:
+This code can only be run in Linux Machine. Please disable your browser cache. To run the proxy without cache Change the name of the file (`proxy_server_with_cache.c to proxy_server_without_cache.c`) MakeFile.
+
