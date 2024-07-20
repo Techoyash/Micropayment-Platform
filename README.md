@@ -6,3 +6,11 @@ The motivation for this project stems from a desire to understand several key as
 
 ##### OS Component Used ​
 The project utilized several key OS components to achieve its functionality. Threading was implemented to manage multiple operations concurrently, while locks were employed to ensure proper synchronization and avoid conflicts. Semaphores were used to control access to shared resources efficiently. Additionally, caching was implemented using the Least Recently Used (LRU) algorithm to optimize performance by storing frequently accessed data and reducing retrieval times.
+
+## How to Run
+
+```bash
+$ git clone https://github.com/YashSinghal1512/ProxyServerMulti-Threaded.git
+$ cd MultiThreadedProxyServerClient
+$ make all
+$ ./proxy <port no.>
